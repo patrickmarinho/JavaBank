@@ -5,6 +5,7 @@ public class JavaBank {
 
         //Tela principal de loign e cadastro
         new Loginscreen();
+
     }
 }
 
