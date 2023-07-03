@@ -2,8 +2,10 @@ package bank;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class MainMenu {
+public class MainMenu implements ActionListener {
     private JLabel Title;
     private JButton depósitoButton;
     private JButton saqueDeValoresButton;
@@ -11,6 +13,8 @@ public class MainMenu {
     private JButton sobreAContaButton;
     private JPanel panel3;
     private JLabel title;
+    private JLabel balance;
+    private JLabel balancevalue;
 
     private JFrame frame;
 
@@ -34,9 +38,31 @@ public class MainMenu {
         transferênciaButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         sobreAContaButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 
+        //Evento ao clicar nos botões
+        depósitoButton.addActionListener(this);
+        saqueDeValoresButton.addActionListener(this);
+        transferênciaButton.addActionListener(this);
+        sobreAContaButton.addActionListener(this);
     }
 
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == depósitoButton){
+            frame.dispose();
+            new DepositoMenu();
+
+        } else if (e.getSource() == saqueDeValoresButton) {
+            frame.dispose();
+            new SaqueMenu();
+
+        } else if (e.getSource() == transferênciaButton) {
+
+        } else{ //sobreAContaButton
+
+        };
+
+    }
 }
 
 
