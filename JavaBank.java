@@ -12,6 +12,7 @@ public class JavaBank {
 
 //objetivos:
 //criar uma tela de login e de cadastro com a opção para cadastrar-se - OK
+// criar uma senha limitada a 6 digitos - OK
 // criar uma conta(limitada a 12 char)
 //saque de valores
 //não poder sacar mais do que possui na conta

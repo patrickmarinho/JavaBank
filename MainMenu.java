@@ -8,9 +8,9 @@ public class MainMenu {
     private JButton depósitoButton;
     private JButton saqueDeValoresButton;
     private JButton transferênciaButton;
-    private JLabel Balanço;
     private JButton sobreAContaButton;
     private JPanel panel3;
+    private JLabel title;
 
     private JFrame frame;
 
@@ -35,6 +35,8 @@ public class MainMenu {
         sobreAContaButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 
     }
+
+
 }
 
 
