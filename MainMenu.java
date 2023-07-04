@@ -57,8 +57,12 @@ public class MainMenu implements ActionListener {
             new SaqueMenu();
 
         } else if (e.getSource() == transferênciaButton) {
+            frame.dispose();
+            new TransferenciaMenu();
 
         } else{ //sobreAContaButton
+            frame.dispose();
+            new SobreConta();
 
         };
 

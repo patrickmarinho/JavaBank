@@ -2,8 +2,10 @@ package bank;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class DepositoMenu {
+public class DepositoMenu implements ActionListener {
     private JPanel panel4;
     private JLabel titlelabel;
     private JLabel saldoValor;
@@ -17,7 +19,7 @@ public class DepositoMenu {
         //Config da Tela
         frame = new JFrame("Javabank");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(270, 370));
+        frame.setPreferredSize(new Dimension(270, 200));
         frame.setResizable(false);
 
         //Config da Tela
@@ -26,6 +28,16 @@ public class DepositoMenu {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
+        //Evento voltar para o menu principal
+        voltarButton.addActionListener(this);
+
+    }
+
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        frame.dispose();
+        new MainMenu();
     }
 }
 

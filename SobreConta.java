@@ -5,25 +5,27 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SaqueMenu implements ActionListener {
-    private JPanel panel5;
-    private JFormattedTextField valueSaque;
-    private JButton sacarButton;
+public class SobreConta implements ActionListener {
+    private JPanel panel7;
+    private JFormattedTextField ncomptxt;
+    private JFormattedTextField cpftxt;
+    private JFormattedTextField agtxt;
+    private JFormattedTextField cctxt;
+    private JFormattedTextField dtcriatxt;
+    private JFormattedTextField ultactxt;
     private JButton voltarButton;
-    private JLabel saldoValue;
-    private JLabel saldoSaque;
-    private JLabel titleSaque;
+    private JLabel sobretitle;
     private JFrame frame;
 
-    public SaqueMenu() {
+    public SobreConta(){
         //Config da Tela
         frame = new JFrame("Javabank");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(270, 200));
+        frame.setPreferredSize(new Dimension(370, 250));
         frame.setResizable(false);
 
         //Config da Tela
-        frame.add(panel5);
+        frame.add(panel7);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);

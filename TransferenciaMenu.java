@@ -5,32 +5,33 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SaqueMenu implements ActionListener {
-    private JPanel panel5;
-    private JFormattedTextField valueSaque;
-    private JButton sacarButton;
+public class TransferenciaMenu implements ActionListener {
+    private JPanel panel6;
+    private JLabel saldo;
+    private JFormattedTextField ag;
+    private JFormattedTextField cc;
+    private JFormattedTextField valor;
+    private JButton transferirButton;
     private JButton voltarButton;
-    private JLabel saldoValue;
-    private JLabel saldoSaque;
-    private JLabel titleSaque;
+    private JLabel valueTransf;
+    private JLabel valorLabel;
     private JFrame frame;
 
-    public SaqueMenu() {
+    public TransferenciaMenu(){
         //Config da Tela
         frame = new JFrame("Javabank");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(270, 200));
+        frame.setPreferredSize(new Dimension(270, 220));
         frame.setResizable(false);
 
         //Config da Tela
-        frame.add(panel5);
+        frame.add(panel6);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
         //Evento voltar para o menu principal
         voltarButton.addActionListener(this);
-
     }
 
     @Override

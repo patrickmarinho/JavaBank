@@ -23,7 +23,7 @@
         </constraints>
         <properties>
           <font name="Arial Black" size="14" style="1"/>
-          <text value="Quanto você deseja depositar?"/>
+          <text value="Quanto você deseja Depositar?"/>
         </properties>
       </component>
       <component id="618e7" class="javax.swing.JLabel" binding="saldoValor">
